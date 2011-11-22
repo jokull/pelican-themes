@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
+  <meta charset="utf-8">
+
+  <meta name="description" content="">
+  <meta name="author" content="{{ AUTHOR }}">
+  <meta property="og:type" content="blog">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="alternate" href="{{ SITEURL }}/feeds/all.atom.xml" type="application/atom+xml">
+
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/base.css">
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/skeleton.css">
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/styles.css">
+  
+  <script src="http://cachedcommons.org/cache/modernizr/1.5.0/javascripts/modernizr-min.js"></script>
+
+</head>
+
+<body id="index" class="home">
+  
+    
+  <header>
+    <div class="container">
+      <div class="sixteen columns">
+        <h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    
+    <div class="row">
+      <div class="sixteen columns">
+      {% block content %}
+      {% endblock %}
+      </div>
+    </div>
+
+    <footer class="row">
+      <div class="sixteen columns">
+      {% if TWITTER %}
+        <p><a href="http://twitter.com/{{ TWITTER }}">@{{ TWITTER }}</a></p>
+      {% endif %}
+        <p class="small">Published by <a href="http://calepin.co">Calepin.co</a> · Powered by <a href="http://pelican.readthedocs.org/">Pelican</a>.</p>
+      </div>
+    </footer>
+
+  </div>
+  
+</body>
+</html>

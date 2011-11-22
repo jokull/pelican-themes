@@ -1,0 +1,90 @@
+/* #Site Styles
+================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700,300);
+
+body { font-family: arial, helvetica, sans-serif; background: #f0f0f0; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Merriweather', serif; }
+
+
+header { 
+  margin-bottom: 30px; 
+  background: white; 
+  border-bottom: 1px solid #e0e0e0; }
+  
+h1 { font-size: 18px; padding: 20px 0; margin: 0; }
+h1 a:hover,
+h1 a:visited,
+h1 a { font-weight: bold; text-decoration: none; display: block; }
+
+footer { 
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Merriweather', serif;
+  font-weight: bold; 
+  text-shadow: 0 1px 0 white;
+  color: #777; 
+  text-align: right; }
+footer .columns { 
+  padding: 20px 0; 
+  border-top: 1px solid #e0e0e0; }
+footer a { text-shadow: none; color: #222; }
+
+.permalink { text-align: right; }
+.permalink a { text-transform: uppercase; font-size: 8pt; color: #888; }
+
+abbr.published { 
+  color: #666; font-size: 14px;
+  font-family: 'Merriweather', serif; }
+abbr.published a { color: #666; text-decoration: none; }
+  
+#post-list { list-style: none; }
+#post-list li { margin-bottom: 20px; }
+#post-list li h2 { font-size: 20px; font-weight: 500; text-shadow: 0 1px 0 white; }
+#post-list li h2 a { text-decoration: none; border-bottom: 1px solid #e0e0e0; }
+
+article { margin-bottom: 3em; }
+article p,
+article li, 
+article blockquote,
+article h4,
+article h4,
+article h5,
+article h6,
+article h6,
+article h6,
+article hr, 
+article table { max-width: 480px; }
+
+article p { font-size: 100%; }
+article ul { list-style: disc outside; margin-left: 2em; }
+
+article .entry-header { margin-bottom: 20px; }
+article .entry-header h2 { margin: 20px 0; }
+article .entry-header a { text-decoration: none; border-bottom: 0; }
+article .entry-header a:hover { border-bottom: 1px solid #CCC; }
+article .entry-header .published a { border: 0; color: #888; }
+
+article .entry-content h3 { font-size: 14pt; }
+article .entry-content h4 { font-size: 12pt; }
+article .entry-content h5 { font-size: 10pt; }
+article .entry-content h6 { font-size: 10pt; margin-bottom: .3em; }
+
+sup { vertical-align: .2em; font-size: 80%; margin: -2px 0 0 2px; }
+
+p img { max-width: 100%; }
+code, pre { font-family: courier-new, courier, monospace; 
+            background: rgba(0, 255, 0, .05); }
+code { font-weight: bold; }
+pre { padding: 15px; margin: 20px 0;
+      box-shadow: 0 0 2px rgba(0, 255, 0, .8);
+      font-size: 12px; }
+small { font-size: 80%; }
+
+  
+@media only screen and (max-width: 767px) {
+  footer { font-size: 12px; }
+  article .entry-header h2 { font-size: 22px; margin: 10px 0; }
+  abbr.published { font-size: 11px; }
+  #post-list li h2 { font-size: 16px; }
+}
