@@ -15,7 +15,7 @@
 
   <link rel="stylesheet" href="{{ SITEURL }}/theme/base.css">
   <link rel="stylesheet" href="{{ SITEURL }}/theme/skeleton.css">
-  <link rel="stylesheet" href="{{ SITEURL }}/theme/styles.css?b92kd">
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/styles.css">
   
   <script src="http://cachedcommons.org/cache/modernizr/1.5.0/javascripts/modernizr-min.js"></script>
 
@@ -23,7 +23,6 @@
 
 <body id="index" class="home">
   
-    
   <header>
     <div class="container">
       <div class="sixteen columns">
@@ -36,8 +35,10 @@
     
     <div class="row">
       <div class="sixteen columns">
-      {% block content %}
-      {% endblock %}
+      <h2 class="section">{% block section -%}
+        
+      {% endblock %}</h2>
+      {% block content %}{% endblock %}
       </div>
     </div>
 
@@ -54,6 +55,22 @@
     </footer>
 
   </div>
+
+{% if GOOGLE_ANALYTICS %}
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '{{ GOOGLE_ANALYTICS }}']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+{% endif -%}
   
 </body>
 </html>

@@ -3,13 +3,13 @@
 
 @import url(http://fonts.googleapis.com/css?family=Merriweather:400,700,300);
 
-body { font-family: arial, helvetica, sans-serif; background: #f0f0f0; }
+body { font-family: arial, helvetica, sans-serif; }
 h1, h2, h3, h4, h5, h6 { font-family: 'Merriweather', serif; }
 
 
 header { 
   margin-bottom: 30px; 
-  background: white; 
+  background: #f0f0f0; 
   border-bottom: 1px solid #e0e0e0; }
   
 h1 { font-size: 18px; padding: 20px 0; margin: 0; }
@@ -17,9 +17,17 @@ h1 a:hover,
 h1 a:visited,
 h1 a { font-weight: bold; text-decoration: none; display: block; }
 
+h2.section { 
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: arial, helvetica, sans-serif;
+}
+
+iframe, object { margin-bottom: 1em; }
+
 footer { 
   font-size: 14px;
-  font-weight: bold;
   font-family: 'Merriweather', serif;
   font-weight: bold; 
   text-shadow: 0 1px 0 white;
@@ -58,8 +66,8 @@ article h6,
 article hr, 
 article table { max-width: 480px; }
 
-article p { font-size: 100%; }
 article ul { list-style: disc outside; margin-left: 2em; }
+article blockquote { font-size: 14px; padding-top: 7px; }
 
 article .entry-header { margin-bottom: 20px; }
 article .entry-header h2 { margin: 20px 0; }
@@ -71,6 +79,10 @@ article .entry-content h3 { font-size: 14pt; }
 article .entry-content h4 { font-size: 12pt; }
 article .entry-content h5 { font-size: 10pt; }
 article .entry-content h6 { font-size: 10pt; margin-bottom: .3em; }
+
+article .metadata { font-size: 11px; color: #888; }
+article .metadata p { margin-bottom: 0; }
+article .metadata a { color: #666; }
 
 sup { vertical-align: .2em; font-size: 80%; margin: -2px 0 0 2px; }
 
