@@ -95,11 +95,30 @@ pre { padding: 15px; margin: 20px 0;
       font-size: 12px; }
 small { font-size: 80%; }
 
-  
+
+
 @media only screen and (max-width: 767px) {
-  footer { font-size: 12px; }
+  
+  header { margin-bottom: 15px; }
+  header h1 { padding: 10px 0; }
+  footer { font-size: 11px; }
   footer .twitter { position: static; }
   article .entry-header h2 { font-size: 22px; margin: 10px 0; }
   abbr.published { font-size: 11px; }
-  #post-list li h2 { font-size: 16px; }
+  
+  #post-list li { margin-bottom: 6px; }
+  #post-list li abbr { margin-bottom: 0px; }
+  #post-list li h2 { font-size: 16px; line-height: 24px; }
+  
+  article p,
+  article li, 
+  article blockquote,
+  article h4,
+  article h4,
+  article h5,
+  article h6,
+  article h6,
+  article h6,
+  article hr, 
+  article table { max-width: none; }
 }
