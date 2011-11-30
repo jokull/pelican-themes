@@ -12,10 +12,20 @@ header {
   background: #f0f0f0; 
   border-bottom: 1px solid #e0e0e0; }
   
-h1 { font-size: 18px; padding: 20px 0; margin: 0; }
+h1 { font-size: 20px; padding: 20px 0; margin: 0; }
 h1 a:hover,
 h1 a:visited,
 h1 a { font-weight: bold; text-decoration: none; display: block; }
+h1 a img { 
+  border-radius: 2px; 
+  padding: 1px; 
+  background: white; 
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3); 
+  margin-right: 15px;
+  vertical-align: middle;
+  width: 26px;
+  height: 26px;
+}
 
 h2.section { 
   font-size: 13px;
