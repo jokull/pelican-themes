@@ -2,6 +2,12 @@
 
 {% block title %}{{ article.title }} - {{ super() }}{%endblock%}
 
+{% block head -%}
+{% if article.canonical %}
+  <link rel="canonical" href="{{ article.canonical }}">
+{%- endif %}
+{% endblock %}
+
 {% block content %}  
 
   <article class="hentry">
