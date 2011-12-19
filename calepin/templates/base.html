@@ -21,7 +21,7 @@
   
   <script src="http://cachedcommons.org/cache/modernizr/1.5.0/javascripts/modernizr-min.js"></script>
 
-  {% if GOOGLE_ANALYTICS %}
+  {%- if GOOGLE_ANALYTICS %}
   <script type="text/javascript">
 
     var _gaq = _gaq || [];
@@ -35,7 +35,8 @@
     })();
 
   </script>
-  {% endif -%}
+  {%- endif %}
+  
 </head>
 
 <body>
