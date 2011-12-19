@@ -6,6 +6,44 @@
 {% if article.canonical %}
   <link rel="canonical" href="{{ article.canonical }}">
 {%- endif %}
+
+  <script type="text/javascript">
+    <!--
+    function getPadding (oEl) {
+      var iTotalPadding = 0,
+          oReg = new RegExp("(px)", "g");
+
+      // IE way
+      if (oEl.currentStyle) {
+        iTotalPadding = parseInt(oEl.currentStyle['padding-left'].replace(reg, ""))
+                      + parseInt(oEl.currentStyle['padding-right'].replace(reg, ""));
+      } else if (window.getComputedStyle) {
+        iTotalPadding = parseInt(document.defaultView.getComputedStyle(oEl, null).getPropertyValue('padding-left').replace(reg, "")) 
+                      + parseInt(document.defaultView.getComputedStyle(oEl, null).getPropertyValue('padding-right').replace(reg, ""));
+      };
+
+      return parseInt(iTotalPadding);
+    };
+    
+    (function () {
+      if(!document.getElementsByTagName) return;
+      
+      var oElem = document.getElementsByTagName("pre");
+      if(!oElem) return;
+
+      for (var i = oElem.length - 1; i >= 0; i--) {
+        (function () {
+          var oEl = oElem[i],
+              sDefaultWidth = oEl.offsetWidth - getPadding(oEl),
+              sHoverWidth   = oEl.scrollWidth - getPadding(oEl);
+
+          oEl.onmouseover = function() { oEl.style.width = sHoverWidth +"px"; };
+          oEl.onmouseout  = function() { oEl.style.width = sDefaultWidth +"px"; };
+        })();
+      };
+    })();
+    -->
+  </script>
 {% endblock %}
 
 {% block content %}  
