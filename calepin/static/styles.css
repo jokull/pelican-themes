@@ -3,9 +3,10 @@
 
 @import url(http://fonts.googleapis.com/css?family=Merriweather:400,700,300);
 
-body { font-family: arial, helvetica, sans-serif; }
-h1, h2, h3, h4, h5, h6 { font-family: 'Merriweather', serif; }
+body { font: 18px/25px 'Palatino', 'Palatino Linotype', 'Georgia', serif; }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
+li { line-height: 24px }
 
 header { 
   margin-bottom: 30px; 
@@ -60,7 +61,7 @@ abbr.published a { color: #666; text-decoration: none; }
   
 #post-list { list-style: none; }
 #post-list li { margin-bottom: 20px; }
-#post-list li h2 { font-size: 20px; font-weight: 500; text-shadow: 0 1px 0 white; }
+#post-list li h2 { font-size: 20px; line-height: 29px; font-weight: 500; text-shadow: 0 1px 0 white; }
 #post-list li h2 a { text-decoration: none; border-bottom: 1px solid #e0e0e0; }
 
 article { margin-bottom: 3em; }
@@ -74,7 +75,7 @@ article h6,
 article h6,
 article h6,
 article hr, 
-article table { max-width: 480px; }
+article table { max-width: 560px; }
 
 article ul { list-style: disc outside; margin-left: 2em; }
 article blockquote { font-size: 14px; line-height: 19px; padding: 0 12px; margin: 20px 8px; }
@@ -101,6 +102,7 @@ sup { vertical-align: .2em; font-size: 80%; margin: -2px 0 0 2px; }
 
 p img { max-width: 100%; }
 code, pre { font-family: "Andale Mono", "courier-new", courier, monospace; }
+code { background: #F0F0F0; border-radius: 3px; font-size: 16px; }
 pre { margin: 20px 0;
       font-size: 13px; }
 small { font-size: 80%; }
