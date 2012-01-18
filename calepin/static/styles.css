@@ -130,7 +130,7 @@ code, pre { font-family: "Andale Mono", "courier-new", courier, monospace;
             font-size: 10pt; }
 code { background: rgba(0,0,0,.05); border-radius: 3px; 
        text-shadow: 1px 1px 0 white; padding: 1px; }
-pre { margin: 20px 0; }
+pre { margin: 20px 0; line-height: 14pt; }
 small { font-size: 80%; }
 
 /* .container, .container .sixteen.columns { width: 480px; } */
