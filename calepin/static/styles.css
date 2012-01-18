@@ -126,10 +126,11 @@ article .metadata a { color: #666; }
 sup { vertical-align: .2em; font-size: 80%; margin: -2px 0 0 2px; }
 
 p img { max-width: 100%; }
-code, pre { font-family: "Andale Mono", "courier-new", courier, monospace; }
-code { background: #F0F0F0; border-radius: 3px; font-size: 16px; }
-pre { margin: 20px 0;
-      font-size: 13px; }
+code, pre { font-family: "Andale Mono", "courier-new", courier, monospace;
+            font-size: 10pt; }
+code { background: rgba(0,0,0,.05); border-radius: 3px; 
+       text-shadow: 1px 1px 0 white; padding: 1px; }
+pre { margin: 20px 0; }
 small { font-size: 80%; }
 
 /* .container, .container .sixteen.columns { width: 480px; } */
