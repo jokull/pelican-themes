@@ -149,7 +149,8 @@ small { font-size: 80%; }
   #post-list li abbr { margin-bottom: 0px; }
   #post-list li h2 { font-size: 16px; line-height: 24px; }
   
-  article .entry-content p { font-size: 10pt; line-height: 16pt; }
+  article .entry-content p,
+  article .entry-content li { font-size: 10pt; line-height: 16pt; }
   
   article p,
   article li, 
