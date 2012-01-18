@@ -1,8 +1,6 @@
 /* #Site Styles
 ================================================== */
 
-@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700,300);
-
 body { font: 18px/25px 'Palatino', 'Palatino Linotype', 'Georgia', serif; }
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
@@ -32,14 +30,14 @@ h2.section {
   font-size: 13px;
   font-weight: bold;
   margin-bottom: 20px;
-  font-family: arial, helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 iframe, object { margin-bottom: 1em; }
 
 footer { 
   font-size: 14px;
-  font-family: 'Merriweather', serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: bold; 
   text-shadow: 0 1px 0 white;
   color: #777; 
@@ -51,18 +49,43 @@ footer .columns {
 footer a { text-shadow: none; color: #222; }
 footer .twitter { position: absolute; left: 0; top: 20px; }
 
+table {
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 0;
+  font-size: 13px;
+  border-collapse: collapse; }
+table th, table td {
+  padding: 10px 10px 9px;
+  line-height: 18px;
+  text-align: left; }
+table th {
+  padding-top: 9px;
+  font-weight: bold;
+  vertical-align: middle; }
+table td {
+  vertical-align: top;
+  border-top: 1px solid #ddd; }
+table tbody th {
+  border-top: 1px solid #ddd;
+  vertical-align: top; }
+
 .permalink { text-align: right; }
-.permalink a { text-transform: uppercase; font-size: 8pt; color: #888; }
+.permalink a { text-transform: uppercase; font-size: 8pt; color: #CCC; }
 
 abbr.published { 
-  color: #666; font-size: 14px;
-  font-family: 'Merriweather', serif; }
+  color: #666; font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif; }
 abbr.published a { color: #666; text-decoration: none; }
   
 #post-list { list-style: none; }
-#post-list li { margin-bottom: 20px; }
-#post-list li h2 { font-size: 20px; line-height: 29px; font-weight: 500; text-shadow: 0 1px 0 white; }
-#post-list li h2 a { text-decoration: none; border-bottom: 1px solid #e0e0e0; }
+#post-list li { margin-bottom: 40px; }
+#post-list li h2 { font-size: 17pt; line-height: 29px; font-weight: normal; 
+                   margin: 0; }
+#post-list li h2 a { text-decoration: none; }
+#post-list li h2 a:hover { text-decoration: underline; }
+#post-list li h2 .pictogram { color: #CCC; }
+#post-list p.abstract { font-size: 11pt; }
 
 article { margin-bottom: 3em; }
 article p,
@@ -79,7 +102,7 @@ article table { max-width: 560px; }
 
 article ul { list-style: disc outside; margin-left: 2em; }
 article blockquote { font-size: 14px; line-height: 19px; padding: 0 12px; margin: 20px 8px; }
-article blockquote p { font-family: 'Merriweather', serif; font-size: 13px; font-style: normal; }
+article blockquote p { font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; }
 
 article .entry-header { margin-bottom: 20px; }
 article .entry-header h2 { margin: 20px 0; }

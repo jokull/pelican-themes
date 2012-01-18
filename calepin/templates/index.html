@@ -10,7 +10,11 @@
       <abbr class="published" title="{{ article.date.isoformat() }}">
         <a href="{{ SITEURL }}/{{ article.url }}">{{ article.locale_date }}</a>
       </abbr>
-      <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
+      <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} 
+          <span class="pictogram">➝</span></a></h2>
+      {% if article.abstract %}
+      <p class="abstract">{{ article.abstract }}</p>
+      {% endif %}
     </li>
   {% endfor %}
   </ul>
