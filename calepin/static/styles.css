@@ -122,6 +122,7 @@ article .entry-content li { font-size: 12pt; line-height: 20pt; }
 article .metadata { font-size: 11px; color: #888; }
 article .metadata p { margin-bottom: 0; }
 article .metadata a { color: #666; }
+article .metadata address { display: none; }
 
 sup { vertical-align: .2em; font-size: 80%; margin: -2px 0 0 2px; }
 
