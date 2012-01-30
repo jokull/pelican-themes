@@ -38,7 +38,7 @@
   </script>
   {%- endif %}
   
-  {%- if GAUGES_ID %}
+  {%- if GAUGE_ID %}
   <script type="text/javascript">
   
     var _gauges = _gauges || [];
@@ -47,7 +47,7 @@
       t.type  = 'text/javascript';
       t.async = true;
       t.id    = 'gauges-tracker';
-      t.setAttribute('data-site-id', '{{ GAUGES_ID }}');
+      t.setAttribute('data-site-id', '{{ GAUGE_ID }}');
       t.src = '//secure.gaug.es/track.js';
       var s = document.getElementsByTagName('script')[0];
       s.parentNode.insertBefore(t, s);
