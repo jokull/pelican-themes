@@ -1,24 +1,21 @@
 {% extends "base.html" %}
 
-{% block content %}  
+{% block content %}
 
-<section id="content">
-
-  <ul id="post-list">
+  <ul class="post-list">
   {% for article in articles_page.object_list %}
     <li>
       <abbr class="published" title="{{ article.date.isoformat() }}">
         <a href="{{ SITEURL }}/{{ article.url }}">{{ article.locale_date }}</a>
       </abbr>
-      <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} 
-          <span class="pictogram">➝</span></a></h2>
+      <h2 class="title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
       {% if article.abstract %}
       <p class="abstract">{{ article.abstract }}</p>
       {% endif %}
     </li>
   {% endfor %}
   </ul>
-  
+
   {% if articles_page.has_previous() or articles_page.has_next() %}
   <p class="paginator">
     {% if articles_page.has_previous() %}
@@ -34,7 +31,5 @@
     {% endif %}
   </p>
   {% endif %}
-  
-</section><!-- /#content -->
 
 {% endblock content %}
